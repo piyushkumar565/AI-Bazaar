@@ -1,13 +1,12 @@
-// Placeholder for AI product description generation
-function generateDescription(productName) {
-    return `This is a detailed AI-generated description for ${productName}.`;
+// Local AI-style description generator (no API needed)
+function generateDescriptionLocal(name, product = {}) {
+  const short = `${name} — high quality at an affordable price. Perfect for Indian customers.`;
+  const bullets = [
+    `Reliable performance`,
+    `Value for ₹${product.price}`,
+    `Fast delivery & easy returns`
+  ];
+  return `${short}\n\n• ${bullets.join('\n• ')}`;
 }
 
-// Apply AI descriptions after fetching products
-fetch('products.json')
-    .then(res => res.json())
-    .then(data => {
-        data.forEach(product => {
-            product.description = generateDescription(product.name);
-        });
-    });
+window.generateDescriptionLocal = generateDescriptionLocal;

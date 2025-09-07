@@ -44,11 +44,11 @@ header input {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 20px;
   text-align: center;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease-in-out;
 }
 
 .product:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .product img {
@@ -72,15 +72,4 @@ header input {
   font-size: 16px;
   font-weight: bold;
   color: #27ae60;
-}
-    transition: transform 0.2s ease-in-out;
-}
-
-.product-card:hover {
-    transform: scale(1.05);
-}
-
-.product-card img {
-    max-width: 100%;
-    border-radius: 10px;
 }

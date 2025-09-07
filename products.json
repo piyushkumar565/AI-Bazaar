@@ -4,13 +4,13 @@
         "name": "Wireless Earbuds",
         "price": 1200,
         "image": "https://via.placeholder.com/150",
-        "description": "AI-generated description will appear here."
+        "description": ""
     },
     {
         "id": 2,
         "name": "Smart Watch",
         "price": 2500,
         "image": "https://via.placeholder.com/150",
-        "description": "AI-generated description will appear here."
+        "description": ""
     }
 ]
